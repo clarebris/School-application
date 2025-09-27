@@ -17,6 +17,15 @@ const signToken = (userId) => {
 
   return jwt.sign({ id: userId }, process.env.JWT_SECRET, { expiresIn: "1d" });
 };
+    
+
+
+
+
+
+
+
+
 
 router.post("/register", async (req, res) => {
   const { email, password } = req.body;
